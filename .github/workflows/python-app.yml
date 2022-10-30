@@ -5,18 +5,15 @@ name: Python application
 
 on:
   push:
-development
     branches: ["main"]
   pull_request:
     branches: ["main"]
-
 
 permissions:
   contents: read
 
 jobs:
   build:
-development
     runs-on: ubuntu-latest
 
     steps:
@@ -39,4 +36,3 @@ development
       - name: Run main
         run: |
           python main.py
-
